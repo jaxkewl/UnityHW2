@@ -91,7 +91,7 @@ public class FireCircleRotate : MonoBehaviour
         if (angle > 360) angle = 0;
 
         Vector3 v3 = correctifyQuadrant(findLocalAngle());
-        Debug.Log($"pos.x:{this.transform.position.x} pos.y:{this.transform.position.x}, new.x:{v3.x}, new.y:{v3.y}");
+        //Debug.Log($"pos.x:{this.transform.position.x} pos.y:{this.transform.position.x}, new.x:{v3.x}, new.y:{v3.y}");
         this.transform.position = v3;
         angle += speed;
     }
